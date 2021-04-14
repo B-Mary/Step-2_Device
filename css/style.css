@@ -1,0 +1,287 @@
+
+@font-face {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight:bold;
+  src: local(''),
+       url('../fonts/gilroyextrabold.woff2') format('woff2'), 
+       url('../fonts/gilroyextrabold.woff') format('woff'); 
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''),
+       url('../fonts/gilroylight.woff2') format('woff2'), 
+       url('../fonts/gilroylight.woff') format('woff'); 
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  src: local(''),
+       url('../fonts/opensans.woff2') format('woff2'), 
+       url('../fonts/opensans.woff') format('woff'); 
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''),
+       url('../fonts/opensanslight.woff2') format('woff2'), 
+       url('../fonts/opensanslight.woff') format('woff'); 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family:'Gilroy' , 'Open Sans', sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #000;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+a, li{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/* Header start */
+
+header{
+  width: 100% ;
+}
+
+.header__wrapper{
+  margin-top: 40px;
+ background-color: #f0c52e;
+ opacity: 0.5; 
+ height: 300px;
+ position: relative;
+}
+
+.logo{
+  position: absolute;
+  top: -19px;
+  left: 60px;
+}
+
+.container-header{
+  padding: 53px 61px 0 63px;
+}
+
+.services{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.search-form{
+  position: relative;
+}
+
+ .search-form__input{
+  border: none;
+  background-color: transparent;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 300;
+  height: 16px;
+  width: 144px;
+  background: url(../img/search.png) no-repeat left;
+  padding-left: 36px;
+  margin-right: 159px;
+} 
+
+.search-form__input:hover{
+  opacity: 0.6;
+  border: none;
+  background-color: transparent;
+}
+
+.search-form__input:focus,
+.search-form__input:active {
+  border-bottom: 2px solid black;
+  padding: 14px 159px 14px 0 ;
+}
+
+.search-form__input:hover .fearch-form__btn{
+  display: block;
+}
+
+
+.search-form__btn{
+  display: none;
+ text-align: center;
+ border: 2px solid #000000;
+ background-color:  #f0c52e;
+ opacity: 0.5;
+ font-family: "Open Sans";
+ width: 85px;
+ height: 49px;
+}
+
+.search-form__brn:hover{
+  background-color: black;
+  border: 2px solid #000000;
+  width: 85px;
+  height: 49px;
+  color: white;
+}
+.search-form__brn:active{
+  background-color: black;
+  border: 2px solid #000000;
+  width: 85px;
+  height: 49px;
+  color: white;
+  opacity: 0.3;
+}
+
+.list-services{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 500px;
+}
+
+.services-item__link{
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 300;
+ 
+ 
+}
+
+.services-item__link_enter{
+  margin-left: 0; 
+  background: url(../img/user.png) no-repeat left ;
+  padding-left: 27px;
+}
+
+.services-item__link_compare{
+  background: url(../img/compare.png) no-repeat left;
+  padding-left: 22px;
+  margin-left: 218px;
+}
+
+.services-item__link_cart{
+  background: url(../img/cart.png) no-repeat left;
+  padding-left: 24px;
+  margin-left: 41px;
+}
+
+/* Header nav */
+
+.container-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 53px;
+}
+
+.dropdown{
+  position: relative;
+  /* display: inline-block; */
+}
+
+.dropdown-content{
+  margin-top: 20px;
+  display: none;
+  position: absolute;
+  background-color:  #f0c52e;
+  opacity: 0.5;
+  width: 600px;
+  left: 0; 
+  z-index: 3;
+}
+
+.dropbtn{
+  font-family: "Gilroy ";
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  width: 214px;
+  text-transform: uppercase;
+  background: url(../img/plus.png) no-repeat right;
+  padding-right: 32px;
+}
+
+.block-catalog{
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+ 
+}
+
+.block-catalog__link{
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 300;
+  float: none;
+  display: block;
+  text-align: left;
+}
+
+.nav-list{
+  display: flex;
+  flex-direction: row; 
+  width: 500px;
+}
+
+.list-item__link{
+  font-family: "Gilroy ";
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.list-item__link_delivery{
+  width: 121px;
+  align-self: flex-start;
+}
+
+.list-item__link_guarantee{
+  margin-left: 38px;
+  width: 109px;
+}
+.list-item__link_contacts{
+  margin-left: 114px;
+  width: 117px;
+  
+}
+
+/* IMG */
+
+.container-img{
+  margin-top: 67px;
+  width: 500px;
+  margin-left: 540px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container-img__line{
+  width: 100px;
+  height: 7px;
+}
+/* Header end */
+
+
+
+
+
