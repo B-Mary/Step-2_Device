@@ -158,8 +158,14 @@ header{
   font-family: "Open Sans";
   font-size: 15px;
   font-weight: 300;
- 
- 
+}
+
+.services-item__link:hover{
+  opacity: 0.6;
+}
+
+.services-item__link:active{
+  opacity: 0.3;
 }
 
 .services-item__link_enter{
@@ -216,6 +222,22 @@ header{
   padding-right: 32px;
 }
 
+.dropbtn:hover{
+  opacity: 0.6;
+}
+
+.dropbtn:active{
+  opacity: 0.3;
+}
+
+.block-catalog__link:hover{
+  opacity: 0.6;
+}
+
+.block-catalog__link:active{
+  opacity: 0.3;
+}
+
 .block-catalog{
   float: left;
   width: 33.33%;
@@ -224,8 +246,12 @@ header{
 
 .dropdown:hover .dropdown-content{
   display: block;
- 
 }
+
+ /* .dropdown:active .dropdown-content{
+  display: block;
+ }  */
+
 
 .block-catalog__link{
   font-family: "Open Sans";
@@ -263,6 +289,15 @@ header{
   width: 117px;
   
 }
+
+.list-item__link:hover{
+ opacity: 0.6;
+}
+
+.list-item__link:active{
+  opacity: 0.3;
+ }
+ 
 
 /* IMG */
 
