@@ -103,16 +103,18 @@ header{
   margin-right: 159px;
 } 
 
-.search-form__input:hover{
+.search-form__input:hover,
+.search-form__input:focus{
   opacity: 0.6;
   border: none;
   background-color: transparent;
 }
 
-.search-form__input:focus,
+
 .search-form__input:active {
   border-bottom: 2px solid black;
   padding: 14px 159px 14px 0 ;
+  outline: none;
 }
 
 .search-form__input:hover .fearch-form__btn{
@@ -201,7 +203,7 @@ header{
 }
 
 .dropdown-content{
-  margin-top: 20px;
+  padding-top: 10px;
   display: none;
   position: absolute;
   background-color:  #f0c52e;
@@ -246,6 +248,7 @@ header{
 
 .dropdown:hover .dropdown-content{
   display: block;
+ 
 }
 
  /* .dropdown:active .dropdown-content{
