@@ -1,0 +1,274 @@
+@font-face {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight:bold;
+  src: local(''),
+       url('../fonts/gilroyextrabold.woff2') format('woff2'), 
+       url('../fonts/gilroyextrabold.woff') format('woff'); 
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''),
+       url('../fonts/gilroylight.woff2') format('woff2'), 
+       url('../fonts/gilroylight.woff') format('woff'); 
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  src: local(''),
+       url('../fonts/opensans.woff2') format('woff2'), 
+       url('../fonts/opensans.woff') format('woff'); 
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''),
+       url('../fonts/opensanslight.woff2') format('woff2'), 
+       url('../fonts/opensanslight.woff') format('woff'); 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family:'Gilroy' , 'Open Sans', sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #000;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+a, li{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/* Header start */
+
+.header__wrapper{
+  position: relative;
+  background-color: rgba(240,197,46, 0.5);
+  margin-top: 40px;
+  height: 299px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo{
+  position: absolute;
+  top: -19px;
+  left: 60px;
+}
+
+.container-1{
+  padding: 53px 61px 0 63px;
+  height: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+
+.search-form{
+  position: relative;
+}
+
+.search-form__input{
+  border: none;
+  background-color: transparent;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 300;
+  height: 16px;
+  width: 144px;
+  background: url(../img/search.png) no-repeat left;
+  padding-left: 36px;
+  opacity: 0.3;
+}
+
+.search-form__input:hover{
+  opacity: 0.6;
+  border: none;
+  outline: none;
+}
+
+.search-form__input:focus{
+  outline: none;
+  color: #000000;
+  border-bottom: 2px solid #000000;
+  padding-top: 19px;
+  padding-bottom: 16px;
+  width: 356px;
+}
+
+.search-form__btn{
+ display: none; 
+ text-align: center;
+ border: 2px solid #000000;
+ background-color: transparent;
+ font-family: "Open Sans";
+ width: 85px;
+ height: 49px;
+}
+
+.services{
+  width: 499px;
+}
+
+.list-services{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.services-item__link{
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.services-item__link_enter{
+  background: url(../img/user.png) no-repeat left ;
+  padding-left: 27px;
+}
+
+.services-item__link_compare{
+  background: url(../img/compare.png) no-repeat left;
+  padding-left: 20px;
+  margin-left: 219px;
+}
+
+.services-item__link_cart{
+  background: url(../img/cart.png) no-repeat left;
+  padding-left: 24px;
+  margin-left: 41px;
+}
+
+.services-item__link:hover{
+  opacity: 0.6;
+}
+
+.services-item__link:active{
+  opacity: 0.3;
+}
+
+.container-2{
+  margin: 80px 0 0 60px;
+  height: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+
+.dropdown-container{
+  display: none;
+}
+
+.dropdown{
+  position: relative;
+}
+
+.dropbtn{
+  font-family: "Gilroy ";
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  width: 214px;
+  text-transform: uppercase;
+  background: url(../img/plus.png) no-repeat right;
+  padding-right: 32px;
+}
+
+.dropbtn:hover{
+  opacity: 0.6;
+}
+
+.dropbtn:active{
+  opacity: 0.3;
+}
+
+.list-catalog__link{
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 36px;
+}
+
+.list-catalog__link:hover{
+  opacity: 0.6;
+}
+
+.list-catalog__link:active{
+  opacity: 0.3;
+}
+
+.dropdown:hover .dropdown-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 10px;
+  position: absolute;
+  width: 518px;
+  left: 0; 
+  z-index: 3;
+}
+.nav{
+  margin-right: 61px;
+  width: 499px;
+}
+.nav-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.list-item__link{
+  font-family: "Gilroy ";
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+}
+
+.list-item_delivery{
+  width: 121px;
+
+}
+
+.list-item_guarantee{
+  width: 109px;
+  margin-left: 38px;
+}
+
+.list-item_contacts{
+  width: 117px;
+  margin-left: 114px;
+  margin-right: 10px;
+}
+
+.list-item__link:hover{
+  opacity: 0.6;
+ }
+ 
+ .list-item__link:active{
+   opacity: 0.3;
+  }
+
+
+/* Header end */
