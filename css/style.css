@@ -59,11 +59,13 @@ a, li{
 
 .header__wrapper{
   position: relative;
-  background-color: rgba(240,197,46, 0.5);
+  /* background-color: rgba(240,197,46, 0.5); */
+  background-color: #f7e296;
   margin-top: 40px;
   height: 299px;
   display: flex;
   flex-direction: column;
+  z-index: 1;
 }
 
 .logo{
@@ -185,7 +187,9 @@ a, li{
 
 .dropdown-container{
   display: none;
+  padding-bottom: 24px;
 }
+
 
 .dropdown{
   position: relative;
@@ -226,6 +230,7 @@ a, li{
   opacity: 0.3;
 }
 
+
 .dropdown:hover .dropdown-container{
   display: flex;
   flex-direction: row;
@@ -234,8 +239,8 @@ a, li{
   position: absolute;
   width: 518px;
   left: 0; 
-  z-index: 3;
-  background-color: rgba(240,197,46, 0.5);
+   z-index: 3; 
+  background-color: #f7e296;
 }
 .nav{
   margin-right: 61px;
@@ -283,47 +288,77 @@ a, li{
 
 /* Header end */
 /* Slide main start */
-.wrapper-slide{
+/* .wrapper-slide{
  margin-right: 90px ;
  margin-left: 60px;
  background-color: transparent;
-}
+} */
 
 .ben-slider,
-.lose-weight,
-.quadcopter{
+.lose-weight{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: absolute;
-  top: 228px;
-  z-index: 2;
+  margin-top: -109px;
+  background-color: transparent;
+  margin-right: 90px ;
+  margin-left: 60px;
+}
+.lose-weight{
+  margin-top: -109px;
+  background-color: transparent;
+  margin-right: 1160px ;
+  margin-left: 54px;
+}
+
+.quadcopter{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin-top: -100px;
+  background-color: transparent;
+  margin-right: 31px ;
+  margin-left: 53px;
 }
 
 .content-slide{
   margin-left: 125px;
 }
 
-.number{
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-}
+.img{
+  z-index: 2;
+} 
 
-.number__line{
-  margin-top: 37px;
-  width: 100px;
-  height: 7px;
-  margin-right: 234px;
+.content-slide{
+  z-index: 2;
 }
 
 .info-slide__title{
+  margin-top: 75px;
   width: 394px;
   font-family: "Gilroy";
   font-size: 47px;
   font-weight: bold;
   line-height: 56px;
   letter-spacing: 0.17px;
+  position: relative;
+}
+
+.info-slide__title::before{
+  content: '';
+  position: absolute;
+  background-color: white;
+  width: 100px;
+  height: 7px;
+  top: -46px;
+  z-index: 3;
+}
+.info-slide__title_ben::after{
+  content: url(../img/number_one.png);
+  position: absolute;
+  right: -90px;
+  top: -70px;
+  z-index: 2;
 }
 
 .info-slide__text{
@@ -337,21 +372,45 @@ a, li{
 }
 
 .carousel{
-  margin-top: 64px;
+  margin-top: 60px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: relative;
 }
 .carousel__link{
   width: 220px;
-  background-color: #f0c52e;
   font-family: "Gilroy";
   font-size: 18px;
   font-weight: bold;
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 2.15px;
-  padding: 2px 43px 5px 44px;
+  padding-left: 43px;
+ 
+}
+
+.carousel__link::before{
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 0;
+  background-color: #f0c52e;
+  width: 220px;
+  height: 8px;
+  z-index: -1;
+}
+
+.carousel__link:active{
+  background-color:#f0c52e; 
+  padding: 14px 43px 11px 44px;
+  opacity: 0.3;
+}
+
+.carousel__link:hover{
+  background-color:#f0c52e; 
+  padding: 14px 43px 11px 44px;
+  
 }
 
 .characteristics{
@@ -408,10 +467,21 @@ a, li{
   line-height: 20px;
   letter-spacing: 0.13px;
 }
+.content-slide_fit{
+  margin-left: 125px;
+}
 
 .info-slide__title_fit{
   width: 259px;
+  margin-top: 81px;
 }
+.info-slide__title_fit::after{
+  content: url(../img/number_two.png);
+  position: absolute;
+  right: -249px;
+  top: -70px;
+}
+
 .info-slide__text_fit{
   width: 445px;
 }
@@ -434,18 +504,83 @@ a, li{
   letter-spacing: 0.13px;
 }
 
-.content-slide_quadcopter{
-  margin-left: 42px;
+ .content-slide_quadcopter{
+  margin-left: 0;
+} 
+
+.img__selfie_quad{
+  margin-top: 56px;
+  width: 526px;
 }
 
 .info-slide__title_quad{
   width: 502px;
+  margin-top: 71px;
+}
+
+.info-slide__title_quad::after{
+    content: url(../img/number_three.png);
+    position: absolute;
+    right: 0;
+    top: -70px;
 }
 
 .info-slide__text_quad{
   margin-top: 39px;
   width: 455px;
 }
+
+
+
+
+.circle{
+  margin-top: 5px;
+  height: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+
+.radio-container{
+  position: relative;
+  width: 12px;
+  margin-right: 21px;
+}
+
+.radio-container__input{
+  visibility: hidden;
+}
+
+.radio-container__label{
+  margin-right: 21px;
+}
+
+.radio-container__label::before{
+  box-sizing: border-box;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 11px;
+  height: 11px;
+  border: 1px solid black;
+  border-radius: 100%;
+
+}
+
+.radio-container__input:checked+.radio-container__label::after{
+  box-sizing: border-box;
+  content: "";
+  position: absolute;
+  top: 3.7px;
+  left: 4.3px;
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  border: 1px solid black;
+}
+
 /* Slide main end */
 
 
