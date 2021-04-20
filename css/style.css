@@ -83,6 +83,9 @@ a, li{
 
 .search-form{
   position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 .search-form__input{
@@ -109,13 +112,13 @@ a, li{
   color: #000000;
   border-bottom: 2px solid #000000;
   padding-top: 19px;
-  padding-bottom: 16px;
+  padding-bottom: 30px;
   width: 356px;
 }
 
 .search-form__btn{
    display: none; 
-  visibility: hidden;
+ 
   text-align: center;
   border: 2px solid #000000;
   background-color: transparent;
@@ -126,15 +129,7 @@ a, li{
 
 .search-form__input:focus + .search-form__btn{
    display: block;
-  /* text-align: center;
-  border: 2px solid #000000;
-  background-color: transparent;
-  font-family: "Open Sans";
-  width: 85px;
-  height: 49px; 
-  position: absolute;
-  top: 0;
-  right: 0; */
+
 }
 
 .services{
@@ -240,6 +235,7 @@ a, li{
   width: 518px;
   left: 0; 
   z-index: 3;
+  background-color: rgba(240,197,46, 0.5);
 }
 .nav{
   margin-right: 61px;
@@ -286,16 +282,184 @@ a, li{
 
 
 /* Header end */
+/* Slide main start */
+.wrapper-slide{
+ margin-right: 90px ;
+ margin-left: 60px;
+ background-color: transparent;
+}
+
+.ben-slider,
+.lose-weight,
+.quadcopter{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  top: 228px;
+  z-index: 2;
+}
+
+.content-slide{
+  margin-left: 125px;
+}
+
+.number{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.number__line{
+  margin-top: 37px;
+  width: 100px;
+  height: 7px;
+  margin-right: 234px;
+}
+
+.info-slide__title{
+  width: 394px;
+  font-family: "Gilroy";
+  font-size: 47px;
+  font-weight: bold;
+  line-height: 56px;
+  letter-spacing: 0.17px;
+}
+
+.info-slide__text{
+  margin-top: 31px;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+  color: #464646;
+}
+
+.carousel{
+  margin-top: 64px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.carousel__link{
+  width: 220px;
+  background-color: #f0c52e;
+  font-family: "Gilroy";
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2.15px;
+  padding: 2px 43px 5px 44px;
+}
+
+.characteristics{
+  margin-top: 71px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.long{
+  margin-right: 81px;
+}
+
+.long__metr,
+.weigh__kg,
+.material__name{
+  font-family: Gilroy;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 48px;
+  letter-spacing: 0.36px;
+  height: 36px;
+}
+.long__text{
+  margin-top: 20px;
+  color: #464646;
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.13px;
+}
+
+.weight{
+  margin-right: 80px;
+}
+
+.weight__text{
+  margin-top: 25px;
+  color: #464646;
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.13px;
+}
+
+.material__text{
+  margin-top: 18px;
+  color: #464646;
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.13px;
+}
+
+.info-slide__title_fit{
+  width: 259px;
+}
+.info-slide__text_fit{
+  width: 445px;
+}
+.time__hour{
+  font-family: Gilroy;
+   font-size: 36px;
+  font-weight: 300;
+  line-height: 48px;
+  letter-spacing: 0.36px;
+  height: 36px;
+}
+
+.time__text{
+  margin-top: 25px;
+  color: #464646;
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.13px;
+}
+
+.content-slide_quadcopter{
+  margin-left: 42px;
+}
+
+.info-slide__title_quad{
+  width: 502px;
+}
+
+.info-slide__text_quad{
+  margin-top: 39px;
+  width: 455px;
+}
+/* Slide main end */
+
+
+
 
 /* Footer start */
 .footer{
-  margin-top: 100px;
+  margin-top: 500px;
   background-color: #464646;
   height: 323px;
   width: 100%;
 }
 
-.container-footer-1{
+.container-footer-services{
   padding-top: 65px ;
   display: flex;
   flex-direction: row;
@@ -352,7 +516,7 @@ a, li{
 }
 
 
-.container-footer-2{
+.container-footer-nav{
   margin-top: 40px;
   display: flex;
   flex-direction: row;
@@ -419,7 +583,7 @@ a, li{
 
 
 
-.container-footer-3{
+.container-footer-social{
   margin-top: 70px;
   display: flex;
   flex-direction: row;
