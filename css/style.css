@@ -239,7 +239,7 @@ a, li{
   position: absolute;
   width: 518px;
   left: 0; 
-   z-index: 3; 
+   z-index: 4; 
   background-color: #f7e296;
 }
 .nav{
@@ -319,6 +319,7 @@ a, li{
   background-color: transparent;
   margin-right: 31px ;
   margin-left: 53px;
+ 
 }
 
 .content-slide{
@@ -326,11 +327,11 @@ a, li{
 }
 
 .img{
-  z-index: 2;
+   z-index: 3; 
 } 
 
 .content-slide{
-  z-index: 2;
+   z-index: 3; 
 }
 
 .info-slide__title{
@@ -351,7 +352,7 @@ a, li{
   width: 100px;
   height: 7px;
   top: -46px;
-  z-index: 3;
+  z-index: 2;
 }
 .info-slide__title_ben::after{
   content: url(../img/number_one.png);
@@ -405,6 +406,7 @@ a, li{
   background-color:#f0c52e; 
   padding: 14px 43px 11px 44px;
   opacity: 0.3;
+  
 }
 
 .carousel__link:hover{
@@ -516,6 +518,7 @@ a, li{
 .info-slide__title_quad{
   width: 502px;
   margin-top: 71px;
+ 
 }
 
 .info-slide__title_quad::after{
@@ -523,15 +526,13 @@ a, li{
     position: absolute;
     right: 0;
     top: -70px;
+  z-index: 4;
 }
 
 .info-slide__text_quad{
   margin-top: 39px;
   width: 455px;
 }
-
-
-
 
 .circle{
   margin-top: 5px;
