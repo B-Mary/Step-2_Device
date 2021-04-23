@@ -155,7 +155,7 @@
             </div>
           </div>
         </div>
-        <div class="lose-weight " style="display: none;">
+        <div class="lose-weight " >
           <div class="img">
             <img src="./img/fit-slider.png" alt="img fit bracelet" class="img__selfie">
           </div>
@@ -172,7 +172,7 @@
                 <a href="#!" class="carousel__link">
                   Подробнее
                 </a>
-                <div class="circle">
+                <form class="circle">
                   <div class="radio-container">
                     <input type="radio" id="radio1" class="radio-container__input" checked>
                     <label for="radio1" class="radio-container__label"></label> 
@@ -180,12 +180,12 @@
                   <div class="radio-container">
                     <input type="radio" id="radio2"  class="radio-container__input" >
                     <label for="radio2" class="radio-container__label"></label>
-                  </div> 
+                  </div>
                   <div class="radio-container">
                     <input type="radio" id="radio3"  class="radio-container__input" >
                     <label for="radio3" class="radio-container__label"></label>
-                  </div> 
-                </div>
+                  </div>
+                </form>
               </div>
               <div class="characteristics">
                 <div class="time">
@@ -196,7 +196,7 @@
               </div>
             </div>
           </div>
-          <div class="quadcopter" >
+          <div class="quadcopter" style="display: none;" >
             <div class="img">
               <img src="./img/quad.png" alt="img quadcopter " class="img__selfie img__selfie_quad">
             </div>
@@ -306,68 +306,68 @@
 
 <!-- Services start -->
   <section class="services-section">
-    <div class="wrapper">
-      <div class="container-services">
-        <ul class="nav-services">
-          <li class="services-list services-list_delivery">
-            <a href="#!" class="services-list__link">
-              Доставка
-            </a>
-          </li>
-          <li class="services-list services-list_garantee">
-            <a href="#!" class="services-list__link">
-              Гарантия
-            </a>
-          </li>
-          <li class="services-list services-list_credit">
-            <a href="#!" class="services-list__link">
-              Кредит
-            </a>
-          </li> 
-        </ul>
-        <div class="services-delivery">
-          <div class="delivery-info">
-            <h2 class="delivery-info__title">
+    
+    <div class="container-services">
+        <div class="service-block service-block_first">
+          <input type="radio" class="service-block__input" name="serv-radio" id="radio1" checked>
+          <label for="radio1" class="service-block__label service-block__label_del ">
+            Доставка
+          </label>         
+        </div>
+        <div class="service-block">
+          <input type="radio" class="service-block__input" name="serv-radio" id="radio2">
+          <label for="radio2" class="service-block__label service-block__label_garantee">
+            Гарантия
+          </label>
+        </div>
+        <div class="service-block service-block_last">
+          <input type="radio" class="service-block__input" name="serv-radio" id="radio3">
+          <label for="radio3" class="service-block__label service-block__label_credit">
+            Кредит
+          </label>         
+        </div>
+        <div class="services-del" style="display:none" >
+          <div class="info-del">
+            <h2 class="info-del__title">
               Доставка
             </h2>
-            <p class="delivery-info__text">
+            <p class="info-del__text">
               Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
             </p>
-          </div>         
-          <div class="delivery-img">
-            <img src="./img/delivery.png" alt="delivery pic" class="delivery-img__pic">
+          </div class="servic-img-del">
+            <img src="./img/delivery.png" alt="delivery logo" class="servic-img-del__img">
           </div>
         </div>
-        <div class="services-garantee " >
-          <div class="garantee-info">
-            <h2 class="garantee-info__title">
+        <div class="services-garant"  style="display:none">
+          <div class="info-garant">
+            <h2 class="info-garant__title ">
               Гарантия
             </h2>
-            <p class="garantee-info__text">
+            <p class="info-garant__text ">
               Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>
               Товар, не дом, конечно же.
             </p>
-          </div>
-          <div class="garantee-img">
-            <img src="./img/warranty.png" alt="garantee pic" class="garantee-img__pic">
+            <div class="servic-img-garant">
+              <img src="./img/warranty.png" alt="delivery logo" class="servic-img-garant__img">
+            </div>
           </div>
         </div>
-        <div class="services-credit">
-          <div class="credit-info">
-            <h2 class="credit-info__title">
+        <div class="services-credit"  >
+          <div class="info-credit">
+            <h2 class="info-credit__title ">
               Кредит
             </h2>
-            <p class="credit-info__text">
+            <p class="info-credit__text ">
               Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные 
-              условия кредита. Выгодные для нашего банка, разумеется.
+условия кредита. Выгодные для нашего банка, разумеется.
             </p>
-          </div>         
-          <div class="credit-img">
-            <img src="./img/credit.png" alt="credit pic" class="credit-img__pic">
+            <div class="servic-img-credit">
+              <img src="./img/warranty.png" alt="delivery logo" class="servic-img-credit__img">
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+     </div>
+    
   </section>
 <!-- services end -->
 
