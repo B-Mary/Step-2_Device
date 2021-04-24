@@ -672,78 +672,58 @@ a, li{
   display: flex;
   flex-direction: column;
   position: relative;
-  background: linear-gradient(to bottom, white 24%, #e5e5e5 24% 76%);
+  background: linear-gradient(to bottom, white 28%, #e5e5e5 28% 72%);
   padding-left: 140px;
 }
 
-.service-block__input{
+.del-service__input{
   visibility: hidden;
 }
-
-.service-block_first{
-  margin-top: 80px;
-}
-.service-block{
-  margin-bottom: 53px;
-  position: relative;
+.del-service{
+  padding-top: 96px;
 }
 
-.service-block_last{
-  margin-bottom: 0;
-}
-.service-block__label{
+.del-service__label,
+.garantee-service__label,
+.credit-service__label{
   font-size: 18px;
   font-weight: bold;
   font-family: "Gilroy ";
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 2.15px;
-  z-index: 3;
-}
-.service-block__label::before{
-  content: '';
-  position: absolute;
-  top: 8px;
-  left: 0;
-  background-color: #f0c52e;
-  width: 160px;
-  height: 8px;
-  z-index: -1;
 }
 
-.service-block__label_del::after{
+.del-service__label::after{
   content: url(../img/service-line.png);
   position: absolute;
-  top: -80px;
-  left: 277px;
+  top: 0;
+  left: 414px;
   width: 7px;
   height: 319px;
 }
 
-.service-block__label_del{
+.del-service__label{
   padding-left: 6px;
 }
-.service-block__label_garantee{
+.garantee-service__label{
   padding-left: 12px;
 }
-.service-block__label_credit{
+.credit-service__label{
   padding-left: 24px;
 }
 
 .services-del,
 .services-garant,
-.services-credit{
+.services-credit{ 
+  display: none;
   position: absolute;
-  top: 65px;
-  left:540px ;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 700px;
+  top: 80px;
+  left:531px ;
 }
 .info-del__title,
 .info-garant__title,
-.info-credit__title{
+.info-credit__title {
   font-family: "Gilroy ";
   font-size: 47px;
   font-weight: bold;
@@ -753,7 +733,7 @@ a, li{
 
 .info-del__text,
 .info-garant__text,
-.info-credit__text{
+.info-credit__text {
   width: 426px;
   margin-top: 43px;
   color: #464646;
@@ -763,12 +743,10 @@ a, li{
   line-height: 30px;
   letter-spacing: 0.15px;
 }
-.info__text_garantee{
-  width: 436px;
-}
 
-.info-credit__text {
-  width: 425px;
+
+.info-garant__text{
+  width: 436px;
 }
 
 .servic-img-del,
@@ -777,8 +755,66 @@ a, li{
   margin-left: 132px;
 }
 
+#dev:checked ~ #first{
+  display: flex;
+  position: absolute;
+  top: 80px;
+  left:531px ;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 700px;
+}
+#dev:checked+.del-service__label::before{
+  content: '';
+  background-color: #000000;
+  width: 278px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  color: #f7e184;
+}
+/* ААААА єта фигня не работает  ни +б ни с ~ */
+/* Garanteee */
+.garantee-service{
+  margin-top: 50px;
+}
+.garantee-service__input{
+  visibility: hidden;
+}
 
+#garant:checked ~ #second{
+  display: flex;
+  position: absolute;
+  top: 80px;
+  left:531px ;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 700px;
+}
+/* .services-garant{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+} */
+/* Credit */
+.credit-service{
+  margin-top: 50px;
+}
+
+.credit-service__input{
+  visibility: hidden;
+}
+#credit:checked ~ #third{
+  display: flex;
+  position: absolute;
+  top: 80px;
+  left:531px ;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 700px;
+}
 /* Services end */
+
 
 /* Partners start */
 .partners-img{

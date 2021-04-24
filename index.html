@@ -306,27 +306,13 @@
 
 <!-- Services start -->
   <section class="services-section">
-    
     <div class="container-services">
-        <div class="service-block service-block_first">
-          <input type="radio" class="service-block__input" name="serv-radio" id="radio1" checked>
-          <label for="radio1" class="service-block__label service-block__label_del ">
-            Доставка
-          </label>         
-        </div>
-        <div class="service-block">
-          <input type="radio" class="service-block__input" name="serv-radio" id="radio2">
-          <label for="radio2" class="service-block__label service-block__label_garantee">
-            Гарантия
-          </label>
-        </div>
-        <div class="service-block service-block_last">
-          <input type="radio" class="service-block__input" name="serv-radio" id="radio3">
-          <label for="radio3" class="service-block__label service-block__label_credit">
-            Кредит
-          </label>         
-        </div>
-        <div class="services-del" style="display:none" >
+      <div class="del-service">
+        <input type="radio" class="del-service__input" name="serv-radio" id="dev" checked >
+        <label for="dev" class="del-service__label">
+          Доставка
+        </label>
+        <div class="services-del"  id="first">
           <div class="info-del">
             <h2 class="info-del__title">
               Доставка
@@ -334,11 +320,19 @@
             <p class="info-del__text">
               Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
             </p>
-          </div class="servic-img-del">
+          </div>
+          <div class="servic-img-del">
             <img src="./img/delivery.png" alt="delivery logo" class="servic-img-del__img">
           </div>
         </div>
-        <div class="services-garant"  style="display:none">
+      </div>
+
+      <div class="garantee-service">
+        <input type="radio" class="garantee-service__input" name="serv-radio" id="garant"  >
+        <label for="garant" class="garantee-service__label">
+          Гарантия
+        </label>
+        <div class="services-garant" id="second" >
           <div class="info-garant">
             <h2 class="info-garant__title ">
               Гарантия
@@ -347,26 +341,36 @@
               Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>
               Товар, не дом, конечно же.
             </p>
-            <div class="servic-img-garant">
-              <img src="./img/warranty.png" alt="delivery logo" class="servic-img-garant__img">
-            </div>
+          </div>
+          <div class="servic-img-garant">
+            <img src="./img/warranty.png" alt="delivery logo" class="servic-img-garant__img">
           </div>
         </div>
-        <div class="services-credit"  >
+      </div>
+
+      <div class="credit-service">
+        <input type="radio" class="credit-service__input" name="serv-radio" id="credit" >
+        <label for="credit" class="credit-service__label">
+          Кредит
+        </label>
+        <div class="services-credit" id="third" >
           <div class="info-credit">
             <h2 class="info-credit__title ">
               Кредит
             </h2>
             <p class="info-credit__text ">
               Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные 
-условия кредита. Выгодные для нашего банка, разумеется.
+        условия кредита. Выгодные для нашего банка, разумеется.
             </p>
-            <div class="servic-img-credit">
-              <img src="./img/warranty.png" alt="delivery logo" class="servic-img-credit__img">
-            </div>
+          </div>
+          <div class="servic-img-credit">
+            <img src="./img/credit.png" alt="delivery logo" class="servic-img-credit__img">
           </div>
         </div>
-     </div>
+      </div>
+      
+
+    </div>
     
   </section>
 <!-- services end -->
