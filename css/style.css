@@ -56,7 +56,6 @@ a, li{
 }
 
 /* Header start */
-
 .wrapper_header{
   position: relative;
   background-color: #f7e296;
@@ -179,18 +178,30 @@ a, li{
   height: 15px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  position: relative;
+  justify-content: right;
+  margin-left: 600px;
+}
+
+.dropdown{
+  margin-top: -15px;
+  margin-left: 60px;
 }
 
 .dropdown-container{
   display: none;
-  padding-bottom: 24px;
+  padding-bottom: 33px;
+  margin-left: 60px;
 }
 
-
-.dropdown{
-  position: relative;
+.dropdown:hover .dropdown-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  width: 518px;
+  left: 0; 
+  z-index: 20; 
+  background-color: #f7e296;
 }
 
 .dropbtn{
@@ -228,16 +239,6 @@ a, li{
   opacity: 0.3;
 }
 
-.dropdown:hover .dropdown-container{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  position: absolute;
-  width: 518px;
-  left: 0; 
-  z-index: 20; 
-  background-color: #f7e296;
-}
 .nav{
   margin-right: 61px;
   width: 499px;
@@ -276,57 +277,25 @@ a, li{
   opacity: 0.6;
 }
  
- .list-item__link:active{
+.list-item__link:active{
    opacity: 0.3;
 }
 
-/* Header end */
-/* Slide main start */
 
-.ben-slider,
-.lose-weight{
+/* SLIDER BEN ST  */
+.ben-slider{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: -109px;
+  margin-top: 55px;
   background-color: transparent;
   margin-right: 90px ;
   margin-left: 60px;
 }
-.lose-weight{
-  margin-top: -109px;
-  background-color: transparent;
-  margin-right: 1160px ;
-  margin-left: 54px;
-}
 
-.quadcopter{
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  margin-top: -100px;
-  background-color: transparent;
-  margin-right: 31px ;
-   margin-left: 53px; 
-}
-
-.info-slide{
-  margin-left: 125px;
-  position: relative;
-  z-index: 2;
-}
-
-.info-slide_q{
-  margin-left: 42px;
-}
-
-.img__selfie{
-  z-index: 2; 
-  position: relative;
-} 
 
 .info-slide__title{
-  margin-top: 75px;
+   margin-top: 55px; 
   width: 394px;
   font-family: "Gilroy";
   font-size: 47px;
@@ -343,14 +312,14 @@ a, li{
   width: 100px;
   height: 7px;
   top: -46px;
-  z-index: 2;
 }
+
 .info-slide__title_ben::after{
   content: url(../img/number_one.png);
   position: absolute;
-  right: -90px;
+  right: -114px;
   top: -70px;
-  z-index: 2;
+  z-index: -1;
 }
 
 .info-slide__text{
@@ -379,7 +348,6 @@ a, li{
   text-transform: uppercase;
   letter-spacing: 2.15px;
   padding-left: 43px;
- 
 }
 
 .carousel__link::before{
@@ -513,19 +481,39 @@ a, li{
   line-height: 20px;
   letter-spacing: 0.13px;
 }
+
+/* LOSE weight slider 2 */
+
+.lose-weight{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 55px;
+  background-color: transparent;
+  margin-right: 1160px ;
+  margin-left: 54px;
+}
+.img__selfie_fit{
+  margin-left: 56px;
+}
+
 .content-slide_fit{
-  margin-left: 125px;
+  margin-left: 138px;
 }
 
 .info-slide__title_fit{
   width: 259px;
-  margin-top: 81px;
 }
+
 .info-slide__title_fit::after{
   content: url(../img/number_two.png);
   position: absolute;
   right: -249px;
   top: -70px;
+}
+
+.circle_fit{
+  margin-left: 179px;
 }
 
 .info-slide__text_fit{
@@ -550,37 +538,47 @@ a, li{
   letter-spacing: 0.13px;
 }
 
- .content-slide_quadcopter{
-  margin-left: 0;
-} 
+/* QUADROCOPTER SLIDE */
+
+.quadcopter{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin-top: 64px;
+  background-color: transparent;
+  margin-right: 31px ;
+  margin-left: 31px; 
+}
 
 .img__selfie_quad{
-  margin-top: 56px;
   width: 526px;
+  height: 334px;
+  margin-top: 40px ;
+}
+.info-slide_q{
+  margin-left: 42px;
 }
 
 .info-slide__title_quad{
+  margin-top: 45px;
   width: 502px;
-  margin-top: 71px;
- 
 }
-
-.info-slide__title_quad::after{
-    content: url(../img/number_three.png);
-    position: absolute;
-    right: 0;
-    top: -70px;
-  z-index: -1;
-}
-
 .info-slide__text_quad{
   margin-top: 39px;
   width: 455px;
 }
 
+.info-slide__title_quad::after{
+  content: url(../img/number_three.png);
+  position: absolute;
+  right: 0;
+  top: -70px;
+ z-index: -1;
+}
+/* Header end */
 
 
-/* Slide main end */
+/*  main start */
 
 /* Popular technique start */
 
@@ -588,7 +586,7 @@ a, li{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 106px;
+  margin-top: 530px;
 }
 
 .block-technique__text{
