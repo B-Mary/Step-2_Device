@@ -10,8 +10,7 @@
 
   <!-- Header start -->
 <header class="header">
-  <div class="wrapper">
-    <div class="header__wrapper">
+  <div class="wrapper wrapper_header">
       <div class="logo">
         <img src="./img/logo.png" alt="logo DEVICE" class="logo__pic">
       </div>
@@ -38,47 +37,47 @@
       </div>
       <div class="container-2">
         <div class="dropdown">
-          <a class="dropbtn">Каталог товаров </a>
-          <div class="dropdown-content">  
-            <div class="dropdown-container">
-              <ul class="list">
-                <li class="list-catalog">
-                  <a href="#!" class="list-catalog__link">
-                    Виртуальная реальность
-                  </a>
-                </li>
-                <li class="list-catalog">
-                  <a href="#!" class="list-catalog__link">
-                    Моноподы для селфи
-                  </a>
-                </li>
-                <li class="list-catalog">
-                  <a href="#!" class="list-catalog__link">
-                    Экшн-камеры
-                  </a>
-                </li>
-              </ul>
-              <ul class="list">
-                <li class="list-catalog">
-                  <a href="#!" class="list-catalog__link">
-                    Фитнеc-браслеты
-                  </a>
-                </li>
-                <li class="list-catalog">
-                  <a href="#!" class="list-catalog__link">
-                    Умные часы
-                  </a>
-                </li>
-              </ul>
-              <ul class="list">
-                <li class="list-catalog">
-                  <a href="#!" class="list-catalog__link">
-                    Квадрокоптеры
-                  </a>
-                </li>
-              </ul>
+          <a class="dropbtn">Каталог товаров </a> 
+             <div class="dropdown-content">
+              <div class="dropdown-container">
+                <ul class="list">
+                  <li class="list-catalog">
+                    <a href="#!" class="list-catalog__link">
+                      Виртуальная реальность
+                    </a>
+                  </li>
+                  <li class="list-catalog">
+                    <a href="#!" class="list-catalog__link">
+                      Моноподы для селфи
+                    </a>
+                  </li>
+                  <li class="list-catalog">
+                    <a href="#!" class="list-catalog__link">
+                      Экшн-камеры
+                    </a>
+                  </li>
+                </ul>
+                <ul class="list">
+                  <li class="list-catalog">
+                    <a href="#!" class="list-catalog__link">
+                      Фитнеc-браслеты
+                    </a>
+                  </li>
+                  <li class="list-catalog">
+                    <a href="#!" class="list-catalog__link">
+                      Умные часы
+                    </a>
+                  </li>
+                </ul>
+                <ul class="list">
+                  <li class="list-catalog">
+                    <a href="#!" class="list-catalog__link">
+                      Квадрокоптеры
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-         </div>
         </div>
         <nav class="nav">
           <ul class="nav-list">
@@ -94,7 +93,6 @@
           </ul>
         </nav>
       </div> 
-    </div>
   </div>
 </header>
 
@@ -105,19 +103,15 @@
   <!-- Slider start -->
   <section class="slide">
     <div class="wrapper">
-      <div class="wrapper-slide">
-        <div class="ben-slider" style="display: none; ">
-          <div class="img">
-            <img src="./img/selfi_stick.png" alt="img selfie stick" class="img__selfie">
-          </div>
-          <div class="content-slide">
+        <div class="ben-slider" >
+            <img src="./img/selfi_stick.png" alt="img selfie stick" class="img__selfie">         
             <div class="info-slide">
               <h1 class="info-slide__title info-slide__title_ben">
                 Делай селфи, как Бен Стиллер! 
               </h1>
               <p class="info-slide__text">
                 Самая длинная палка для селфи доступна в нашем магазине.<br>
-Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+                Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
               </p>
               <div class="carousel">
                 <a href="#!" class="carousel__link">
@@ -125,17 +119,17 @@
                 </a>
                 <div class="circle">
                   <div class="radio-container">
-                    <input type="radio" id="radio1" class="radio-container__input" checked>
-                    <label for="radio1" class="radio-container__label"></label> 
+                    <input type="radio" id="f" class="radio-container__input"  name="c">
+                    <label for="f" class="radio-container__label"></label> 
                   </div>
                   <div class="radio-container">
-                    <input type="radio" id="radio2"  class="radio-container__input" >
-                    <label for="radio2" class="radio-container__label"></label>
-                  </div> 
+                    <input type="radio" id="s" name="c" class="radio-container__input" >
+                    <label for="s" class="radio-container__label"></label>
+                  </div>
                   <div class="radio-container">
-                    <input type="radio" id="radio3"  class="radio-container__input" >
-                    <label for="radio3" class="radio-container__label"></label>
-                  </div> 
+                    <input type="radio" id="t"  name="c" class="radio-container__input" >
+                    <label for="t" class="radio-container__label"></label>
+                  </div>
                 </div>
               </div>
               <div class="characteristics">
@@ -153,96 +147,88 @@
                 </div>
               </div>
             </div>
-          </div>
         </div>
-        <div class="lose-weight " >
-          <div class="img">
-            <img src="./img/fit-slider.png" alt="img fit bracelet" class="img__selfie">
-          </div>
-          <div class="content-slide content-slide_fit">
-            <div class="info-slide">
-              <h1 class="info-slide__title info-slide__title_fit">
-                Худеем правильно! 
-              </h1>
-              <p class="info-slide__text info-slide__text_fit">
-                Мотивирующие фитнес-браслеты помогут найти в себе силы 
+
+        <div class="lose-weight " style="display: none;" >
+          <img src="./img/fit-slider.png" alt="img fit bracelet" class="img__selfie">      
+          <div class="info-slide">
+            <h1 class="info-slide__title info-slide__title_fit">
+              Худеем правильно! 
+            </h1>
+            <p class="info-slide__text info-slide__text_fit">
+              Мотивирующие фитнес-браслеты помогут найти в себе силы 
 не пропускать занятия и соблюдать диету.
+            </p>
+            <div class="carousel">
+              <a href="#!" class="carousel__link">
+                Подробнее
+              </a>
+              <div class="circle">
+                <div class="radio-container">
+                  <input type="radio" id="ff" class="radio-container__input" name="c">
+                  <label for="ff" class="radio-container__label"></label> 
+                </div>
+                <div class="radio-container">
+                  <input type="radio" id="ss" name="c" class="radio-container__input" >
+                  <label for="ss" class="radio-container__label"></label>
+                </div>
+                <div class="radio-container">
+                  <input type="radio" id="tt" name="c" class="radio-container__input" >
+                  <label for="tt" class="radio-container__label"></label>
+                </div>
+              </div>
+            </div>
+            <div class="characteristics">
+              <div class="time">
+                <p class="time__hour">48 часов</p>
+                <p class="time__text">Без подзарядки</p>
+              </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="quadcopter"  style="display: none;" >
+          <img src="./img/quad.png" alt="img quadcopter " class="img__selfie img__selfie_quad">
+          <div class="content-slide content-slide_quadcopter">
+            <div class="info-slide info-slide_q">
+              <h1 class="info-slide__title info-slide__title_quad">
+                Порхает как бабочка, жалит как пчела! 
+              </h1>
+              <p class="info-slide__text info-slide__text_quad">
+                Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
               </p>
               <div class="carousel">
                 <a href="#!" class="carousel__link">
                   Подробнее
                 </a>
-                <form class="circle">
+                <div class="circle">
                   <div class="radio-container">
-                    <input type="radio" id="radio1" class="radio-container__input" checked>
-                    <label for="radio1" class="radio-container__label"></label> 
+                    <input type="radio" id="fff" class="radio-container__input" name="c">
+                    <label for="fff" class="radio-container__label"></label> 
                   </div>
                   <div class="radio-container">
-                    <input type="radio" id="radio2"  class="radio-container__input" >
-                    <label for="radio2" class="radio-container__label"></label>
-                  </div>
+                    <input type="radio" id="sss"  class="radio-container__input" name="c">
+                    <label for="sss" class="radio-container__label"></label>
+                  </div> 
                   <div class="radio-container">
-                    <input type="radio" id="radio3"  class="radio-container__input" >
-                    <label for="radio3" class="radio-container__label"></label>
-                  </div>
-                </form>
+                    <input type="radio" id="ttt"  class="radio-container__input" name="c" >
+                    <label for="ttt" class="radio-container__label"></label>
+                  </div> 
+                </div>
               </div>
               <div class="characteristics">
-                <div class="time">
-                  <p class="time__hour">48 часов</p>
-                  <p class="time__text">Без подзарядки</p>
+                <div class="long">
+                  <p class="long__metr">800 м</p>
+                  <p class="long__text">Дальность полета</p>
+                </div>
+                <div class="long">
+                  <p class="long__metr">50 м</p>
+                  <p class="long__text">Радиус поражения</p>
                 </div>
                 </div>
               </div>
-            </div>
           </div>
-          <div class="quadcopter" style="display: none;" >
-            <div class="img">
-              <img src="./img/quad.png" alt="img quadcopter " class="img__selfie img__selfie_quad">
-            </div>
-            <div class="content-slide content-slide_quadcopter">
-              <div class="info-slide">
-                <h1 class="info-slide__title info-slide__title_quad">
-                  Порхает как бабочка, жалит как пчела! 
-                </h1>
-                <p class="info-slide__text info-slide__text_quad">
-                  Этот обычный, на первый взгляд, квадрокоптер оснащен 
-мощным лазером, замаскированным под стандартную камеру.
-                </p>
-                <div class="carousel">
-                  <a href="#!" class="carousel__link">
-                    Подробнее
-                  </a>
-                  <div class="circle">
-                    <div class="radio-container">
-                      <input type="radio" id="radio1" class="radio-container__input" checked>
-                      <label for="radio1" class="radio-container__label"></label> 
-                    </div>
-                    <div class="radio-container">
-                      <input type="radio" id="radio2"  class="radio-container__input" >
-                      <label for="radio2" class="radio-container__label"></label>
-                    </div> 
-                    <div class="radio-container">
-                      <input type="radio" id="radio3"  class="radio-container__input" >
-                      <label for="radio3" class="radio-container__label"></label>
-                    </div> 
-                  </div>
-                </div>
-                <div class="characteristics">
-                  <div class="long">
-                    <p class="long__metr">800 м</p>
-                    <p class="long__text">Дальность полета</p>
-                  </div>
-                  <div class="long">
-                    <p class="long__metr">50 м</p>
-                    <p class="long__text">Радиус поражения</p>
-                  </div>
-                  </div>
-                </div>
-              </div>
-            </div>
         </div>
-      </div>
     </div>
   </section>
 <!-- Slider end -->
