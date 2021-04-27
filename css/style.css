@@ -713,7 +713,13 @@ a, li{
   transition: .5s;
 }
 
- .service_checked:checked::before{
+.del-service__label{
+  background-color: #f0c52e;
+  height: 8px;
+  padding-top: -5px;
+}
+
+.del-service__input:checked + .del-service__label::before{
   color: #f7e184;
   background: #000000;
 } 
