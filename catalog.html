@@ -104,11 +104,248 @@
       <h1 class="monopods__title">
         Моноподы для селфи
       </h1>
+      <ul class="nav-breadcrumb">
+        <li class="list-nav">
+          <a href="#" class="list-nav__link">
+            Главная
+          </a>
+        </li>
+        <li class="list-nav">
+          <a href="#" class="list-nav__link">
+            Каталог товаров
+          </a>
+        </li>
+        <li class="list-nav">
+          <a href="#" class="list-nav__link">
+            Моноподы для селфи
+          </a>
+        </li>
+      </ul>
 
     </div>
 
    </div>
  </header>
   <!-- Header  end -->
+
+  <!-- Main start -->
+<main class="main">
+  <section class="catalog">
+    <div class="title">
+      <h3 class="title__filter">
+        ФИЛЬТР:
+      </h3>
+      <h3 class="title__sorting">
+        Сортировка:
+      </h3>
+      <ul class="nav-filter">
+        <li class="list-filter">
+          <a href="#" class="list-filter__link active">
+            По цене
+          </a>
+        </li>
+        <li class="list-filter">
+          <a href="#" class="list-filter__link">
+            По типу
+          </a>
+        </li>
+        <li class="list-filter">
+          <a href="#" class="list-filter__link">
+            По популярности
+          </a>
+        </li>
+        <li class="list-filter list-filter_img ">
+          <a href="#" class="filter-link">
+            <img src="./img/filter-upp.png" alt="down" class="filter-link__img">
+          </a>
+        </li>
+        <li class="list-filter list-filter_img list-filter_img_last">
+          <a href="#" class="filter-link active">
+            <img src="./img/filter-down.png" alt="down" class="filter-link__img">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="container-filter">
+      <!-- range block -->
+      <div class="cost-block">
+        <h4 class="cost-block__title">
+          Стоимость:
+        </h4>
+        <div class="range-cost">
+          <input type="range" class="range-cost__input">
+        </div>
+        <div class="price-controls">
+          <label for="price-min" class="price-controls__label">
+            от
+          </label>
+          <input type="text" name="min-price" value="0" class="price-controls__input" id="price-min">
+          <label for="price-max" class="price-controls__label price-controls__label_before">
+            до
+          </label>
+          <input type="text" name="min-price" value="50 000" class="price-controls__input" id="price-max">
+        </div>
+      </div>
+
+      <!-- Color checkbox -->
+      <div class="colors">
+        <h4 class="colors__title">
+          Цвет
+        </h4>
+        <div class="form-checkbox">
+          <div class="color-checkbox">
+            <input type="checkbox" class="color-checkbox__input" name="color" id="col1" checked>
+            <label for="col1" class="color-checkbox__label">
+              Черный
+            </label>
+          </div>
+          <div class="color-checkbox">
+            <input type="checkbox" class="color-checkbox__input" name="color" id="col2">
+            <label for="col2" class="color-checkbox__label">
+              Белый
+            </label>
+          </div>
+          <div class="color-checkbox">
+            <input type="checkbox" class="color-checkbox__input" name="color" id="col3" checked>
+            <label for="col3" class="color-checkbox__label">
+              Синий
+            </label>
+          </div>
+          <div class="color-checkbox">
+            <input type="checkbox" class="color-checkbox__input" name="color" id="col4" checked>
+            <label for="col4" class="color-checkbox__label">
+              Красный
+            </label>
+          </div>
+          <div class="color-checkbox">
+            <input type="checkbox" class="color-checkbox__input" name="color" id="col5" >
+            <label for="col5" class="color-checkbox__label">
+              Розовый
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bluetooth -->
+      <div class="bluetooth">
+        <h4 class="bluetooth__title">
+          Bluetooth
+        </h4>
+        <div class="form-radio">
+          <div class="radio-cont">
+            <input type="radio" class="radio-cont__input" checked name="bluet" id="bl">
+            <label for="bl" class="radio-cont__label">
+              Есть
+            </label>
+          </div>
+          <div class="radio-cont">
+            <input type="radio" class="radio-cont__input"  name="bluet" id="blu">
+            <label for="blu" class="radio-cont__label">
+              Нет
+            </label>
+          </div>
+        </div>
+      </div>
+      <button class="container-filter__button">
+        Показать
+      </button>
+
+    </div>
+    
+  </section>
+</main>
+<!-- Main end -->
+
+<!-- Footer start -->
+<footer class="footer">
+  <div class="wrapper">
+    <article class="container-footer-services">
+     <div class="logo-footer">
+       <img src="./img/logo-footer.png" alt="" class="logo-footer__pic">
+     </div>
+     <div class="services-footer">
+       <ul class="list-footer">
+        <li class="service-item-footer">
+          <a href="#!" class="service-item-footer__link service-item-footer__link_val">
+            Валентин Петухов
+          </a>
+        </li>
+         <li class="service-item-footer">
+           <a href="#!" class="service-item-footer__link service-item-footer__link_enter">
+             Войти
+           </a>
+         </li>
+         <li class="service-item-footer">
+           <a href="#!" class="service-item-footer__link service-item-footer__link_compare">
+             Сравнить
+           </a>
+         </li>
+         <li class="service-item-footer">
+           <a href="#!" class="service-item-footer__link service-item-footer__link_cart">
+             Корзина
+           </a>
+         </li>
+       </ul>
+     </div>
+    </article>
+    <article class="container-footer-nav">
+       <div class="adress">
+         <p class="adress__text">
+           г. Москва, ул. Строителей, 15
+         </p>
+       </div>
+       <div class="nav-footer">
+         <ul class="nav-footer-list">
+           <li class="footer-item footer-item_delivery">
+             <a href="#!" class="footer-item__link">
+               Доставка
+             </a>
+           </li>
+           <li class="footer-item footer-item_garantee">
+             <a href="#!" class="footer-item__link">
+               Гарантия
+             </a>
+           </li>
+           <li class="footer-item footer-item_contacts">
+             <a href="#!" class="footer-item__link">
+               Контакты
+             </a>
+           </li>
+         </ul>
+       </div>
+       <div class="tel">
+         <a href="tel:+7 (495) 495-95-95" class="tel__link">
+           Тел.: +7 (495) 495-95-95
+         </a>
+       </div>
+    </article>
+    <article class="container-footer-social">
+      <div class="footer-line">
+        <img src="./img/footer-line.png" alt="footer line img" class="footer-line__pic">
+      </div>
+      <div class="social">
+        <ul class="social-list">
+         <li class="social-item ">
+           <a href="#!" class="social-item__link social-item__link_f "></a>
+         </li>
+         <li class="social-item">
+           <a href="#!" class="social-item__link social-item__link_inst"></a>
+         </li>
+         <li class="social-item">
+           <a href="#!" class="social-item__link social-item__link_tw"></a>
+         </li>
+        </ul>
+      </div>
+      <div class="img-htmlacad">
+        <a href="#!" class="img-footer-link">
+         <img src="./img/logo-html.png" alt="logo htmlacademy" class="img-footer-link__pic">
+        </a>
+        
+      </div>
+    </article>
+
+  </div>
+</footer>
+<!-- Footer end-->
 </body>
 </html>

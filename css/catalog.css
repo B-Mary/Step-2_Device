@@ -89,16 +89,21 @@ a, li{
 }
 
 .search-form__input{
+  box-sizing: border-box;
   border: none;
   background-color: transparent;
   font-family: "Open Sans";
   font-size: 15px;
   font-weight: 300;
-  height: 16px;
-  width: 144px;
-  background: url(../img/search.png) no-repeat left;
+  width: 270px;
+  background: url(../img/search.png);
+  background-position: 10px 10px;
+    background-repeat: no-repeat;
   padding-left: 36px;
-  opacity: 0.3;
+   opacity: 0.3; 
+  position: relative;
+  display: block;
+  padding-top: 5px;
 }
 
 .search-form__input:hover{
@@ -111,23 +116,34 @@ a, li{
   outline: none;
   color: #000000;
   border-bottom: 2px solid #000000;
-  padding-top: 19px;
-  padding-bottom: 30px;
-  width: 356px;
+  padding-bottom: 14px;
+  width: 270px;
+  opacity: 1;
 }
-
 .search-form__btn{
- display: none; 
+  display: none; 
+  top: -6px;
+  right: 4px;
+  width: 85px;
+  height: 48px;
   text-align: center;
   border: 2px solid #000000;
   background-color: transparent;
   font-family: "Open Sans";
-  width: 85px;
-  height: 49px;
 }
 
 .search-form__input:focus + .search-form__btn{
   display: block;
+}
+
+.search-form__btn:hover{
+  display: block;
+  color: #fff;
+  background: #000;
+}
+
+.search-form__btn:active{
+  color: rgba(255, 255, 255, .3);
 }
 
 .services{
@@ -167,6 +183,7 @@ a, li{
   background: url(../img/cart.png) no-repeat left;
   padding-left: 24px;
   margin-left: 41px;
+ 
 }
 
 .services-item__link:hover{
@@ -297,7 +314,7 @@ a, li{
    opacity: 0.3;
 }
 
-/* TITLE monopods */
+/* TITLE monopods  and breadcrumb*/
 .monopods__title{
   font-family: "Gilroy ";
   font-size: 47px;
@@ -307,3 +324,530 @@ a, li{
   margin-top: 100px;
   margin-left: 61px;
 }
+.nav-breadcrumb{
+  margin-top: 35px;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.14px;
+  margin-left: 61px;
+}
+
+.list-nav{
+  display: inline;
+}
+
+.list-nav + .list-nav::before{
+  content: "\203A";
+  color: #000000;
+  padding: 3px 7px;
+}
+
+.list-nav__link{
+  opacity: 0.3;
+}
+.list-nav__link:hover{
+  opacity: 0.6;
+}
+.list-nav__link:active{
+  opacity: 0.1;
+}
+
+/* Main start */
+.catalog{
+  width: 1440px;
+}
+.title{
+  margin-top: 183px;
+  width: 100%;
+  height: 70px;
+  padding-left: 170px;
+  background: linear-gradient(to right, #e5e5e5 33%, rgba(229, 229, 229, 0.3) 33% 100%);
+  display: flex;
+  flex-direction: row;
+}
+.title__filter,
+.title__sorting{
+  font-family: "Gilroy ";
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+
+.title__sorting{
+  margin-left: 260px;
+}
+
+.nav-filter{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-left: 45px;
+}
+.list-filter{
+  margin-left: 29px;
+}
+.list-filter__link{
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  opacity: 0.3;
+}
+.filter-link{
+  opacity: 0.3;
+}
+
+.filter-link:hover{
+  opacity: 0.6;
+}
+
+.filter-link:active{
+  opacity: 1;
+}
+
+ 
+.list-filter__link:hover{
+  opacity: 0.6;
+}
+.active,
+.list-filter__link:active{
+  opacity: 1;
+}
+
+.list-filter_img{
+  margin-left: 200px;
+}
+
+.list-filter_img_last{
+  margin-left: 19px;
+}
+/* Container filter */
+.container-filter{
+  width: 33%;
+  height: 1287px;
+  padding-left: 170px;
+  background:  rgba(229, 229, 229, 0.3);
+}
+
+/* RANGEEE */
+
+.cost-block__title{
+  font-family: "Gilroy";
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.18px;
+  line-height: 24px;
+  position: relative;
+  padding-top: 87px;
+}
+
+.cost-block__title::after{
+  content: url(../img/line-filter.png);
+  position: absolute;
+  width: 201px;
+  height: 2px;
+ top: 56px;
+ left: 0;
+}
+
+.range-cost{
+  width: 196px;
+  margin-top: 41px;
+  margin-left: 0;
+}
+.range-cost__input{
+  width: 196px;
+  height: 1px;
+}
+.price-controls{
+  margin-bottom: 16px;
+}
+.price-controls__label{
+  font-family: Gilroy;
+  font-size: 14px;
+  font-weight: 300;
+  opacity: 0.2;
+  line-height: 24px;
+  margin-left: 4px;
+}
+
+.price-controls__label_before{
+  margin-left: 63px;
+}
+
+.price-controls__input{
+  height: 10px;
+  width: 50px;
+  font-family: Gilroy;
+  font-size: 14px;
+  font-weight: 300;
+  opacity: 0.2;
+  line-height: 24px;
+  border: none;
+}
+
+/* COLOR checkbox */
+
+.colors{
+  margin-top: 59px;
+}
+.colors__title{
+  font-family: "Gilroy ";
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  position: relative;
+}
+.colors__title::after{
+  content: url(../img/line-filter.png);
+  position: absolute;
+  width: 201px;
+  height: 2px;
+  top: -30px;
+  left: 0;
+}
+
+.form-checkbox{
+  margin-top: 35px;
+}
+
+.color-checkbox__label{
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.14px;
+  line-height: 40px;
+  margin-bottom: 20px;
+  padding-left: 40px;
+  position: relative;
+}
+.color-checkbox__label::before{
+  content: url(../img/checkbox-off.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 23px;
+  height: 23px;
+}
+.color-checkbox__input{
+  display: none;
+}
+.color-checkbox__input:checked + .color-checkbox__label::after{
+  content: url(../img/checkbox-on.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Bluetooth */
+
+.bluetooth{
+  margin-top: 63px;
+}
+
+.bluetooth__title{
+  font-family: "Gilroy ";
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  position: relative;
+}
+
+.bluetooth__title::after{
+  content: url(../img/line-filter.png);
+  position: absolute;
+  width: 201px;
+  height: 2px;
+  top: -30px;
+  left: 0;
+}
+.form-radio{
+  margin-top: 30px;
+}
+.radio-cont{
+  position: relative;
+}
+.radio-cont__input{
+  display: none;
+}
+.radio-cont__label{
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 40px;
+  letter-spacing: 0.14px;
+  padding-left: 40px;
+}
+.radio-cont__label::before{
+  content: url(../img/radio-off.png);
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 25px;
+  height: 25px;
+}
+
+.radio-cont__input:checked + .radio-cont__label::after{
+  content: url(../img/radio-on.png);
+  position: absolute;
+  top: 8px;
+  left: 0;
+}
+
+/* Button */
+
+.container-filter__button{
+  box-sizing: border-box;
+  margin-top: 53px;
+  font-family: "Gilroy ";
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2.15px;
+  border: none;
+  color: inherit;
+  text-transform: uppercase;
+  background-color: transparent;
+  width: 200px;
+  background: linear-gradient(to bottom,  transparent 35%,#f0c52e 35% 65%,  transparent 65% 100% );
+  padding-right: 42px;
+  padding-left: 42px;
+}
+.container-filter__button:hover{
+  background: #f0c52e;
+}
+
+.container-filter__button:active{
+  background: #f0c52e;
+  color: rgba(0, 0, 0, 0.3);
+
+}
+
+
+
+
+/* block filter end */
+
+/* Main end */
+
+/* Footer start */
+.footer{
+
+  background-color: #464646;
+  height: 323px;
+  width: 100%;
+}
+
+.container-footer-services{
+  padding-top: 65px ;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.services-footer{
+ padding-top: 8px; 
+
+}
+
+.list-footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.service-item-footer{
+  line-height: 36px;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.service-item-footer__link{
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.service-item-footer__link_val{
+  background: url(../img/user-footer.png) no-repeat left;
+  padding-left: 27px;
+  opacity: 0.7;
+}
+.service-item-footer__link_enter{
+  opacity: 0.3;
+  margin-left: 20px;
+}
+.service-item-footer__link_compare{
+  background: url(../img/compare-footer.png) no-repeat left;
+  padding-left:  20px;
+  margin-left: 44px;
+  opacity: 0.7;
+}
+
+.service-item-footer__link_cart{
+  background: url(../img/cart-footer.png) no-repeat left;
+  padding-left: 24px;
+  margin-left: 41px;
+  opacity: 0.7;
+}
+
+.service-item-footer__link:hover{
+  opacity: 0.6;
+}
+
+.service-item-footer__link:active{
+  opacity: 0.3;
+}
+
+
+.container-footer-nav{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.adress__text,
+.tel__link{
+  line-height: 30px;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.nav-footer{
+  margin-top: 18px;
+}
+
+.nav-footer-list{
+  display: flex;
+  flex-direction: row;
+  width: 423px;
+  justify-content: center;
+}
+
+.footer-item__link{
+  color: #ffffff;
+  font-family: "Gilroy";
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+}
+
+.footer-item{
+ margin-right: 38px;
+}
+
+.footer-item:last-child{
+ margin-right: 0;
+}
+
+.footer-item__link:hover{
+  opacity: 0.6;
+}
+
+.footer-item__link:active{
+  opacity: 0.3;
+}
+
+.tel{
+  margin-top: 12px;
+}
+
+.tel__link:hover{
+  opacity: 0.6;
+}
+
+.tel__link:active{
+  opacity: 0.3;
+}
+
+.container-footer-social{
+  margin-top: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-line{
+  margin-top: 12px;
+}
+
+.social-list{
+  display: flex;
+  flex-direction: row;
+}
+
+.social-item{
+  text-decoration: none;
+  list-style-type: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 23px;
+  position: relative;
+}
+
+.social-item:last-child{
+  margin-right: 0;
+}
+
+.social-item__link{
+  opacity: 0.3;
+}
+
+.social-item__link_f::after{
+ content: '';
+ position: absolute;
+ background-image: url(../img/fb.png);
+ top: 0;
+ left: 0;
+ width: 32px;
+ height: 32px;
+}
+
+.social-item__link_inst::after{
+  content: '';
+  position: absolute;
+  background-image: url(../img/inst.png);
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+}
+
+.social-item__link_tw::after{
+  content: '';
+  position: absolute;
+  background-image: url(../img/tw.png);
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+}
+
+.social-item__link:hover{
+  opacity: 0.6;
+}
+
+.social-item__link:active{
+  opacity: 0.1;
+}
+
+.img-footer-link:hover{
+  opacity: 0.6;
+}
+
+.img-footer-link:active{
+  opacity: 0.3;
+}
+/* Footer end */
