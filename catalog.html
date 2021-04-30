@@ -166,92 +166,205 @@
         </li>
       </ul>
     </div>
-    <div class="container-filter">
-      <!-- range block -->
-      <div class="cost-block">
-        <h4 class="cost-block__title">
-          Стоимость:
-        </h4>
-        <div class="range-cost">
-          <input type="range" class="range-cost__input">
+    <div class="all-container">
+          <!-- filter -->
+      <div class="container-filter">
+        <!-- range block -->
+        <div class="cost-block">
+          <h4 class="cost-block__title">
+            Стоимость:
+          </h4>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
+          </div>
+          <div class="price-controls">
+            <label for="price-min" class="price-controls__label">
+              от
+            </label>
+            <input type="text" name="min-price" value="0" class="price-controls__input" id="price-min">
+            <label for="price-max" class="price-controls__label price-controls__label_before">
+              до
+            </label>
+            <input type="text" name="min-price" value="5000" class="price-controls__input" id="price-max">
+          </div>
         </div>
-        <div class="price-controls">
-          <label for="price-min" class="price-controls__label">
-            от
-          </label>
-          <input type="text" name="min-price" value="0" class="price-controls__input" id="price-min">
-          <label for="price-max" class="price-controls__label price-controls__label_before">
-            до
-          </label>
-          <input type="text" name="min-price" value="50 000" class="price-controls__input" id="price-max">
+
+        <!-- Color checkbox -->
+        <div class="colors">
+          <h4 class="colors__title">
+            Цвет
+          </h4>
+          <div class="form-checkbox">
+            <div class="color-checkbox">
+              <input type="checkbox" class="color-checkbox__input" name="color" id="col1" checked>
+              <label for="col1" class="color-checkbox__label">
+                Черный
+              </label>
+            </div>
+            <div class="color-checkbox">
+              <input type="checkbox" class="color-checkbox__input" name="color" id="col2">
+              <label for="col2" class="color-checkbox__label">
+                Белый
+              </label>
+            </div>
+            <div class="color-checkbox">
+              <input type="checkbox" class="color-checkbox__input" name="color" id="col3" checked>
+              <label for="col3" class="color-checkbox__label">
+                Синий
+              </label>
+            </div>
+            <div class="color-checkbox">
+              <input type="checkbox" class="color-checkbox__input" name="color" id="col4" checked>
+              <label for="col4" class="color-checkbox__label">
+                Красный
+              </label>
+            </div>
+            <div class="color-checkbox">
+              <input type="checkbox" class="color-checkbox__input" name="color" id="col5" >
+              <label for="col5" class="color-checkbox__label">
+                Розовый
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bluetooth -->
+        <div class="bluetooth">
+          <h4 class="bluetooth__title">
+            Bluetooth
+          </h4>
+          <div class="form-radio">
+            <div class="radio-cont">
+              <input type="radio" class="radio-cont__input" checked name="bluet" id="bl">
+              <label for="bl" class="radio-cont__label">
+                Есть
+              </label>
+            </div>
+            <div class="radio-cont">
+              <input type="radio" class="radio-cont__input"  name="bluet" id="blu">
+              <label for="blu" class="radio-cont__label">
+                Нет
+              </label>
+            </div>
+          </div>
+        </div>
+        <button class="container-filter__button">
+          Показать
+        </button>
+      </div>
+      <!-- Product -->
+      <div class="container-catalog">
+        <div class="container-product">
+          <div class="product">
+            <div class="card">
+              <a href="#" class="link-product">
+                <img src="./img/silf1.png" alt="  selfie stick" class="link-product__img">
+              </a>
+              <div class="overlay">
+                <button class="overley__button">
+                  В корзину
+                </button>
+                <a href="#" class="overlay__link">
+                  Добавить к сравнению
+                </a>
+              </div>
+            </div>
+            <div class="block">
+              <h5 class="block__name">
+                Любительская селфи-палка
+              </h5>
+              <p class="block__price">
+                500 руб.
+              </p>
+            </div>
+          </div>
+          <div class="product">
+            <div class="card">
+              <a href="#" class="link-product">
+                <img src="./img/self2.png" alt="  selfie stick" class="link-product__img">
+              </a>
+              <div class="overlay">
+                <button class="overley__button">
+                  В корзину
+                </button>
+                <a href="#" class="overlay__link">
+                  Добавить к сравнению
+                </a>
+              </div>
+            </div>
+            <div class="block">
+              <h5 class="block__name block__name_sm">
+                Профессиональная селфи-палка 
+              </h5>
+              <p class="block__price">
+                1 500 руб.
+              </p>
+            </div>
+          </div>
+          <div class="product">
+            <div class="card">
+              <a href="#" class="link-product">
+                <img src="./img/self3.png" alt=" Amateur selfie stick" class="link-product__img">
+              </a>
+              <div class="overlay">
+                <button class="overley__button">
+                  В корзину
+                </button>
+                <a href="#" class="overlay__link">
+                  Добавить к сравнению
+                </a>
+              </div>
+            </div>
+            <div class="block">
+              <h5 class="block__name">
+                Непотопляемая селфи-палка
+              </h5>
+              <p class="block__price">
+                2 500 руб.
+              </p>
+            </div>
+          </div>
+          <div class="product">
+            <div class="card">
+              <a href="#" class="link-product">
+                <img src="./img/self4.png" alt=" Amateur selfie stick" class="link-product__img">
+              </a>
+              <div class="overlay">
+                <button class="overley__button">
+                  В корзину
+                </button>
+                <a href="#" class="overlay__link">
+                  Добавить к сравнению
+                </a>
+              </div>
+            </div>
+            <div class="block">
+              <h5 class="block__name block__name_lg">
+                Селфи-палка «Следуй за мной»
+              </h5>
+              <p class="block__price">
+                4 900 руб.
+              </p>
+            </div>
+          </div>
+  
+        </div>
+        <div class="btn-page">
+          <a href="#" class="btn-page__link btn-page__link_back">Назад</a>
+          <a href="#" class="btn-page__link btn-page__lin_active ">1</a>
+          <a href="#" class="btn-page__link">2</a>
+          <a href="#" class="btn-page__link">3</a>
+          <a href="#" class="btn-page__link btn-page__link_next">Вперед</a>
         </div>
       </div>
 
-      <!-- Color checkbox -->
-      <div class="colors">
-        <h4 class="colors__title">
-          Цвет
-        </h4>
-        <div class="form-checkbox">
-          <div class="color-checkbox">
-            <input type="checkbox" class="color-checkbox__input" name="color" id="col1" checked>
-            <label for="col1" class="color-checkbox__label">
-              Черный
-            </label>
-          </div>
-          <div class="color-checkbox">
-            <input type="checkbox" class="color-checkbox__input" name="color" id="col2">
-            <label for="col2" class="color-checkbox__label">
-              Белый
-            </label>
-          </div>
-          <div class="color-checkbox">
-            <input type="checkbox" class="color-checkbox__input" name="color" id="col3" checked>
-            <label for="col3" class="color-checkbox__label">
-              Синий
-            </label>
-          </div>
-          <div class="color-checkbox">
-            <input type="checkbox" class="color-checkbox__input" name="color" id="col4" checked>
-            <label for="col4" class="color-checkbox__label">
-              Красный
-            </label>
-          </div>
-          <div class="color-checkbox">
-            <input type="checkbox" class="color-checkbox__input" name="color" id="col5" >
-            <label for="col5" class="color-checkbox__label">
-              Розовый
-            </label>
-          </div>
-        </div>
-      </div>
-
-      <!-- Bluetooth -->
-      <div class="bluetooth">
-        <h4 class="bluetooth__title">
-          Bluetooth
-        </h4>
-        <div class="form-radio">
-          <div class="radio-cont">
-            <input type="radio" class="radio-cont__input" checked name="bluet" id="bl">
-            <label for="bl" class="radio-cont__label">
-              Есть
-            </label>
-          </div>
-          <div class="radio-cont">
-            <input type="radio" class="radio-cont__input"  name="bluet" id="blu">
-            <label for="blu" class="radio-cont__label">
-              Нет
-            </label>
-          </div>
-        </div>
-      </div>
-      <button class="container-filter__button">
-        Показать
-      </button>
 
     </div>
-    
+
   </section>
 </main>
 <!-- Main end -->

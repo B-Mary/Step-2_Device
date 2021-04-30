@@ -358,6 +358,11 @@ a, li{
 .catalog{
   width: 1440px;
 }
+
+.all-container{
+  display: flex;
+  flex-direction: row;
+}
 .title{
   margin-top: 183px;
   width: 100%;
@@ -455,15 +460,49 @@ a, li{
  left: 0;
 }
 
-.range-cost{
-  width: 196px;
+.range-controls {
+  position: relative;
   margin-top: 41px;
-  margin-left: 0;
-}
-.range-cost__input{
   width: 196px;
-  height: 1px;
+  margin-bottom: 16px;
 }
+
+.range-controls .scale {
+  height: 2px;
+  background: #dbdbdb;
+}
+
+.range-controls .bar {
+  width: 50%;
+  height: 2px;
+  background: #91c92f;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 16px;
+  height: 16px;
+  background: #acaaaa;
+  border: 7px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background:  #91c92f;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 50%;
+}
+
+
 .price-controls{
   margin-bottom: 16px;
 }
@@ -476,9 +515,7 @@ a, li{
   margin-left: 4px;
 }
 
-.price-controls__label_before{
-  margin-left: 63px;
-}
+
 
 .price-controls__input{
   height: 10px;
@@ -626,13 +663,194 @@ a, li{
 .container-filter__button:active{
   background: #f0c52e;
   color: rgba(0, 0, 0, 0.3);
+}
+/* block filter end */
 
+/* Product start */
+.container-product{
+  margin-top: 69px;
+  margin-left: 70px;
+  height: 1050px;
+  display: flex;
+ flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 760px;
+}
+
+.product{
+  /* margin-bottom: 70px; */
+  width: 360px;
+  height: 433px;
+ 
+}
+
+.card{
+  position: relative;
+  margin-bottom: 39px;
+  width: 360px;
+  height: 379px;
+}
+
+.link-product{
+  position: absolute;
+}
+
+/* OVERLAY */
+.overlay{
+  width: 360px;
+  height: 379px;
+  background-color: #eeeeee;
+  opacity: 0;
+  position: absolute;
+  transition: all .2s;
+}
+.product:hover .overlay{
+  opacity: 0.7;
+}
+
+.product:hover .link-product{
+  opacity: 1;
+}
+
+.overley__button{
+  font-family: "Gilroy ";
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  letter-spacing: 2.15px;
+  margin-top: 150px;
+  margin-left: 80px;
+  border: none;
+  color: inherit;
+  text-transform: uppercase;
+  background-color: transparent;
+  width: 200px;
+  background: linear-gradient(to bottom,  transparent 35%,#f0c52e 35% 65%,  transparent 65% 100% );
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.overley__button:hover{
+  background: #f0c52e;
+}
+
+.overley__button:active{
+  background: #f0c52e;
+  color: rgba(0, 0, 0, 0.3);
+}
+.overlay__link{
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: 300;
+  opacity: 0.5;
+  line-height: 36px;
+  letter-spacing: 0.13px;
+  margin-top: 33px;
+  margin-left: 108px;
+}
+
+.overlay__link:hover{
+  opacity: 1;
+}
+
+.overlay__link:active{
+  opacity: 0.2;
 }
 
 
+.block{
+  position: relative;
+  bottom: 0;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
 
+}
 
-/* block filter end */
+.block__name{
+  font-family: "Gilroy ";
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+}
+
+.block__name_sm{
+  width: 173px;
+}
+.block__name_lg{
+  width: 225px;
+}
+.block__price{
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+}
+
+/* Button */
+.btn-page{
+  margin-left: 72px;
+  width: 760px;
+  height: 70px;
+  background: rgba(229, 229, 229, 0.8); 
+  display: flex;
+  flex-direction: row;
+}
+
+.btn-page__link{
+  padding-top: 25px;
+  font-family: "Gilroy ";
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.91px;
+  opacity: 0.3;
+  margin-left: 31px;
+}
+.btn-page__link:hover{
+  opacity: 0.6;
+}
+.btn-page__link:active{
+  opacity: 1;
+}
+.btn-page__link_back{
+  padding-left: 30px;
+  opacity: 1;
+  padding-right: 30px;
+  margin-left: 0;
+}
+.btn-page__lin_active{
+  opacity: 1;
+  margin-left: 240px;
+}
+
+.btn-page__link_next{
+  box-sizing: border-box;
+ margin-left: 180px;
+ opacity: 1;
+ padding-right: 30px;
+ padding-left: 30px;
+}
+.btn-page__link_next:hover{
+  background: #e5e5e5 ;
+}
+.btn-page__link_next:active{
+  background: #e5e5e5 ;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.btn-page__link_back:hover{
+  background: #e5e5e5 ;
+}
+.btn-page__link_back:active{
+  background: #e5e5e5 ;
+  color: rgba(0, 0, 0, 0.3);
+}
+/* Product end */
 
 /* Main end */
 
