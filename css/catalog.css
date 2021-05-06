@@ -365,7 +365,8 @@ a, li{
 }
 .title{
   margin-top: 183px;
-  width: 100%;
+  width: 1440px;
+  overflow:hidden;
   height: 70px;
   padding-left: 170px;
   background: linear-gradient(to right, #e5e5e5 33%, rgba(229, 229, 229, 0.3) 33% 100%);
@@ -690,6 +691,14 @@ a, li{
   margin-bottom: 39px;
   width: 360px;
   height: 379px;
+}
+.card__logo{
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  width: 64px;
+  height: 64px;
+  z-index: 10;
 }
 
 .link-product{
